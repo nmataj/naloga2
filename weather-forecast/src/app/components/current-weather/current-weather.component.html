@@ -1,0 +1,17 @@
+<div style="background-color:lavenderblush;  color: gray; height: 100%;">
+    <h4 style="color: #b2cced;  text-align:center; padding: 5px;"><b>Vreme</b></h4>
+    <div *ngIf="loading === false; else elseBlock">
+        <p style="text-align: center;"><b>Trenutna temperatura</b>: {{ weatherForecast.main.temp }}
+            &#8451;<br>
+            <b>Občutek</b>: {{ weatherForecast.main.feels_like }} &#8451;<br>
+            <b>Vlaga</b>: {{ weatherForecast.main.humidity }} %<br>
+            <b>Pritisk</b>: {{ weatherForecast.main.pressure }} mb<br>
+            <b>Najvišja temperatura</b>: {{ weatherForecast.main.temp_max }} &#8451;<br>
+            <b>Najnižja temperatura</b>: {{ weatherForecast.main.temp_min }} &#8451;<br>
+            <b>Oblačnost</b>: {{ weatherForecast.clouds.all }} %<br>
+        </p>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <div class="loader"></div>
+</ng-template>
