@@ -1,0 +1,11 @@
+<div style="background-color:lightsteelblue; color: gray; height: 100%">
+    <h4 style="color: white;  text-align:center; padding: 5px;"><b>5 dnevna napoved</b></h4>
+    <div *ngIf="loading === false; else elseBlock">
+        <p style="text-align: center; margin: 0;" *ngFor="let item of weatherForecast2; index as i">
+            <b>{{ forecastDates[i] }}</b>: {{ item.main.temp }} &#8451;
+        </p>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <div class="loader"></div>
+</ng-template>
