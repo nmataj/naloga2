@@ -1,0 +1,19 @@
+<div class="d-flex align-items-center justify-content-center p-2" style="height: 100vh;">
+    <div class="container p-2">
+        <div class="row pt-2 pb-1 justify-content-center weather-card__title">
+            <div class="col-md-6">
+                <app-card-header [weatherForecast2]="weatherForecast2" [data]="data" [coordinates]="coordinates"
+                    [forecast]="forecast" [show]="show" [weatherForecast]="weatherForecast" [city]="city" [loading]="loading" [localDateTime]="localDateTime" [dateTime]="dateTime"></app-card-header>
+            </div>
+        </div>
+        <div class="row pt-1 pb-2 justify-content-center">
+            <div class="col-md-3">
+                <app-current-weather [weatherForecast]="weatherForecast" [loading]="loading"></app-current-weather>
+            </div>
+            <div class="col-md-3">
+                <app-weather-five-days [weatherForecast2]="weatherForecast2" [loading]="loading" [forecastDates]="forecastDates">
+                </app-weather-five-days>
+            </div>
+        </div>
+    </div>
+</div>

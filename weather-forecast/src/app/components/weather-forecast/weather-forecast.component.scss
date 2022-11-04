@@ -1,0 +1,24 @@
+$backgroundColor: lightcyan;
+$primaryColor: #b2cced;
+
+.d-flex {
+    background-color: $backgroundColor;
+}
+.container {
+    background-color: $backgroundColor;
+    .row {
+        background-color: lightgray;
+    }
+}
+
+.container-fluid {
+    min-height: 100vw;
+}
+
+.data {
+    background-color: gray;
+}
+
+.weather-card__title {
+    color: $primaryColor;
+}
