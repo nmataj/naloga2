@@ -1,0 +1,16 @@
+$primaryColor: #b2cced;
+
+.navbar {
+    background-color: $primaryColor !important;
+    height: 46px !important;
+
+    a {
+        color: white !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 56px !important;
+    }
+}
