@@ -1,0 +1,7 @@
+<div class="text-center" style="background-color: white; height: 100%;">
+    <h1>Maribor</h1>
+
+    <p *ngIf="this.weatherForecast2[0] !== undefined">pridobljeno: {{ this.weatherForecast2[0].dt_txt |
+        date:'dd.MM.YYYY' }} ob {{ this.weatherForecast2[0].dt_txt | date:'hh.mm' }}</p>
+        <button type="button" class="btn btn-primary" (click)="data()">Osveži</button>
+</div>
